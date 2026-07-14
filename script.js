@@ -2,14 +2,15 @@ const music = document.getElementById("bgMusic");
 
 function bukaHadiah() {
 
-    const music = document.getElementById("bgMusic");
-
     if (music && music.paused) {
         music.volume = 0.25;
         music.play().catch(() => {});
     }
 
     document.querySelector(".hero").innerHTML = `
+    ...
+    `;
+}
 
     <img src="IMG-20251016-WA0006.jpg" class="foto">
 
