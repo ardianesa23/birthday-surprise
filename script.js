@@ -134,3 +134,5 @@ function tutupFoto() {
   document.getElementById("lightbox").style.display = "none";
 
 }
+
+console.log("script.js berhasil dimuat");
