@@ -1,6 +1,15 @@
 function bukaHadiah() {
   document.querySelector(".hero").innerHTML = `
 
+  <div class="hati-container">
+      <span class="hati">🤍</span>
+      <span class="hati">🤍</span>
+      <span class="hati">🤍</span>
+      <span class="hati">🤍</span>
+      <span class="hati">🤍</span>
+    </div>
+
+    
     <img src="IMG-20251016-WA0006.jpg" class="foto">
 
     <h1 class="nama">
