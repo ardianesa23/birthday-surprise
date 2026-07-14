@@ -202,28 +202,40 @@ function penutup(){
             Made with 🤍 by Ardian
         </small>
 
-       <div id="kejutanAkhir" style="display:none; margin-top:40px;">
+        <div id="kejutanAkhir" style="display:none;">
 
-    <p class="pesan-kejutan">
-        Masih ada satu kalimat yang belum sempat aku ucapkan...
-    </p>
+            <p class="pesan-rahasia">
+                Sebenarnya...
+                <br><br>
+                Masih ada satu kalimat
+                yang belum sempat aku ucapkan.
+            </p>
 
-    <button class="pesan-btn" onclick="akhirBanget()">
-        Buka 🤍
-    </button>
+            <button class="pesan-btn btn-rahasia"
+                onclick="akhirBanget()">
 
-</div>
+                🤍 Buka
+
+            </button>
+
+        </div>
+
+        `;
 
         hero.classList.remove("keluar");
         hero.classList.add("masuk");
 
-setTimeout(() => {
+        setTimeout(() => {
 
-    document.getElementById("kejutanAkhir").style.display = "block";
+            document.getElementById("kejutanAkhir").style.display = "block";
 
-},3000);
+        },3000);
 
-    function akhirBanget(){
+    },800);
+
+}    
+
+function akhirBanget(){
 
     const hero = document.querySelector(".hero");
 
@@ -233,25 +245,22 @@ setTimeout(() => {
 
         hero.innerHTML = `
 
+        <img src="3.jpg" class="foto foto-akhir">
+
         <h1 class="nama">
-            Hello Sayangg 🤍
+            Hello Sayang 🤍
         </h1>
 
         <p class="pesan-akhir">
 
-            Sampai jumpa di ulang tahunmu berikutnya.
+            Semoga di ulang tahunmu yang akan datang,
 
             <br><br>
 
-            Semoga saat itu,
-            aku masih menjadi orang pertama
-            yang mengucapkan selamat ulang tahun
+            Aku masih menjadi orang pertama
+            yang mengucapkan
+            "Selamat Ulang Tahun"
             untukmu.
-
-            <br><br>
-
-            Terima kasih sudah menjadi
-            bagian dari cerita hidupku.
 
             <br><br>
 
@@ -260,9 +269,20 @@ setTimeout(() => {
 
         </p>
 
-        <div class="love-ending">
-            🤍
-        </div>
+        <div class="love-ending">🤍</div>
+
+        <small>
+
+            Forever starts
+            with little moments.
+
+            <br><br>
+
+            — Ardian
+
+        </small>
+
+        <br><br>
 
         <button class="pesan-btn" onclick="location.reload()">
             🎁 Ulangi Hadiah Ini
