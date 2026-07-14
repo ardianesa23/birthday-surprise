@@ -36,50 +36,65 @@ function bukaHadiah() {
 
 function pesanTerakhir() {
 
-  document.querySelector(".hero").innerHTML = `
+  const hero = document.querySelector(".hero");
 
- <img src="3.jpg" class="foto foto-akhir">
+  // efek pindah halaman
+  hero.classList.add("keluar");
 
-    <h1 class="nama">
-      Selamat ulang tahun, Liliana Nur Hanifah 🤍
-    </h1>
+  setTimeout(() => {
 
-    <p class="pesan-akhir">
+    hero.innerHTML = `
 
-      Hari ini adalah hari dimana seseorang yang
-      sangat berarti bagiku bertambah usia.<br><br>
+      <img src="3.jpg" class="foto foto-akhir">
 
-      Aku bersyukur bisa mengenal kamu,
-      bisa berbagi cerita, tertawa bersama,
-      dan memiliki banyak momen yang berarti.<br><br>
+      <h1 class="nama">
+        Happy Birthday, Liliana Nur Hanifah 🤍
+      </h1>
 
-      Terima kasih sudah hadir dalam hidupku,
-      terima kasih sudah menjadi seseorang yang
-      selalu membuat hari-hariku terasa lebih indah 🤍<br><br>
+      <p class="pesan-akhir">
 
-      Di umur yang baru ini, aku berharap kamu
-      selalu diberikan kesehatan, kebahagiaan,
-      dimudahkan dalam segala urusan,
-      dan semua impian baikmu bisa tercapai.<br><br>
+        Hari ini adalah hari dimana seseorang yang
+        sangat berarti bagiku bertambah usia.<br><br>
 
-      Tetap jadi Liliana yang aku kenal,
-      dengan senyum, kebaikan, dan caramu
-      yang selalu membuat aku merasa beruntung
-      bisa memilikimu.<br><br>
+        Aku bersyukur bisa mengenal kamu,
+        bisa berbagi cerita, tertawa bersama,
+        dan memiliki banyak momen yang berarti.<br><br>
 
-      Semoga aku masih bisa menjadi orang yang
-      menemani perjalananmu, mendukungmu,
-      dan melihat kamu bahagia 🤍<br><br>
+        Terima kasih sudah hadir dalam hidupku,
+        terima kasih sudah menjadi seseorang yang
+        selalu membuat hari-hariku terasa lebih indah 🤍<br><br>
 
-      Sekali lagi, selamat ulang tahun sayangku.
-      Aku sayang kamu 🤍
+        Di umur yang baru ini, aku berharap kamu
+        selalu diberikan kesehatan, kebahagiaan,
+        dimudahkan dalam segala urusan,
+        dan semua impian baikmu bisa tercapai.<br><br>
 
-    </p>
+        Tetap jadi Liliana yang aku kenal,
+        dengan senyum, kebaikan, dan caramu
+        yang selalu membuat aku merasa beruntung
+        bisa memilikimu.<br><br>
 
-    <div class="hati-besar">
-      🤍
-    </div>
+        Semoga aku masih bisa menjadi orang yang
+        menemani perjalananmu, mendukungmu,
+        dan melihat kamu bahagia 🤍<br><br>
 
-  `;
+        Sekali lagi, selamat ulang tahun sayangku.<br>
+        Aku sayang kamu 🤍
+
+      </p>
+
+      <div class="hati-besar">
+        🤍
+      </div>
+
+    `;
+
+
+    // munculkan halaman baru
+    hero.classList.remove("keluar");
+    hero.classList.add("masuk");
+
+
+  }, 800);
 
 }
