@@ -1,3 +1,111 @@
 body {
-  background: pink;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#fff, #ffeef5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px;
+  max-width: 500px;
+}
+
+h1 {
+  color: #444;
+  animation: muncul 1s ease;
+}
+
+.foto {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  animation: fotoMuncul 1.5s ease;
+}
+
+.ucapan {
+  margin-top: 25px;
+  color: #555;
+  line-height: 1.7;
+  animation: muncul 2s ease;
+}
+
+
+button {
+  background: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+@keyframes fotoMuncul {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.hati {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  font-size: 30px;
+  color: white;
+  animation: jatuh 5s infinite;
+}
+
+.hati2 {
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.hati3 {
+  left: 45%;
+  animation-delay: 2s;
+}
+
+
+@keyframes jatuh {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
 }
