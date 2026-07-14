@@ -202,10 +202,70 @@ function penutup(){
             Made with 🤍 by Ardian
         </small>
 
-        <br><br>
+       <div id="kejutanAkhir" style="display:none; margin-top:40px;">
+
+    <p class="pesan-kejutan">
+        Masih ada satu kalimat yang belum sempat aku ucapkan...
+    </p>
+
+    <button class="pesan-btn" onclick="akhirBanget()">
+        Buka 🤍
+    </button>
+
+</div>
+
+        hero.classList.remove("keluar");
+        hero.classList.add("masuk");
+
+setTimeout(() => {
+
+    document.getElementById("kejutanAkhir").style.display = "block";
+
+},3000);
+
+    function akhirBanget(){
+
+    const hero = document.querySelector(".hero");
+
+    hero.classList.add("keluar");
+
+    setTimeout(()=>{
+
+        hero.innerHTML = `
+
+        <h1 class="nama">
+            Hello Sayangg 🤍
+        </h1>
+
+        <p class="pesan-akhir">
+
+            Sampai jumpa di ulang tahunmu berikutnya.
+
+            <br><br>
+
+            Semoga saat itu,
+            aku masih menjadi orang pertama
+            yang mengucapkan selamat ulang tahun
+            untukmu.
+
+            <br><br>
+
+            Terima kasih sudah menjadi
+            bagian dari cerita hidupku.
+
+            <br><br>
+
+            I Love You,
+            Sayang. 🤍
+
+        </p>
+
+        <div class="love-ending">
+            🤍
+        </div>
 
         <button class="pesan-btn" onclick="location.reload()">
-            🎁 Lihat Dari Awal
+            🎁 Ulangi Hadiah Ini
         </button>
 
         `;
