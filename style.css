@@ -226,3 +226,52 @@ button {
   }
 
 }
+
+.pesan-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: white;
+  color: #555;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  animation: munculUcapan 1s ease forwards;
+  animation-delay: 4s;
+}
+
+
+.pesan-akhir {
+  margin-top: 30px;
+  line-height: 1.8;
+  color: #555;
+
+  animation: munculUcapan 1.5s ease;
+}
+
+
+.hati-besar {
+  font-size: 60px;
+  margin-top: 30px;
+  animation: denyut 1.5s infinite;
+}
+
+
+@keyframes denyut {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
