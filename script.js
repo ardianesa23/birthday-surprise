@@ -84,55 +84,136 @@ function pesanTerakhir() {
             </p>
 
       <div class="hati-besar">
-        🤍
-      </div>
+    🤍
+</div>
 
-      <h2 class="judul-galeri">
-        Kenangan kecil kita 🤍
-      </h2>
+<button class="pesan-btn" onclick="bukaGaleri()">
+    Lihat Kenangan Kita 📸
+</button>
 
-      <div class="galeri">
+`;
 
-        <img src="IMG-20250825-WA0023.jpg" onclick="bukaFoto(this)">
-        <img src="IMG-20250831-WA0039.jpg" onclick="bukaFoto(this)">
-        <img src="IMG-20250902-WA0013.jpg" onclick="bukaFoto(this)">
-        <img src="IMG-20250906-WA0271.jpg" onclick="bukaFoto(this)">
-        <img src="IMG-20251018-WA0020.jpg" onclick="bukaFoto(this)">
-        <img src="IMG-20251101-WA0000.jpg" onclick="bukaFoto(this)">
-        <img src="NARI STUDIO-00610.jpg" onclick="bukaFoto(this)">
+hero.classList.remove("keluar");
+hero.classList.add("masuk");
 
-      </div>
-
-      <!-- Lightbox -->
-      <div id="lightbox" onclick="tutupFoto()">
-        <img id="foto-besar">
-      </div>
-
-    `;
-
-    hero.classList.remove("keluar");
-    hero.classList.add("masuk");
-
-  }, 800);
+}, 800);
 
 }
 
+function bukaGaleri() {
 
-// =======================
-// LIGHTBOX
-// =======================
+    const hero = document.querySelector(".hero");
 
-function bukaFoto(foto) {
+    hero.classList.add("keluar");
 
-  document.getElementById("lightbox").style.display = "flex";
-  document.getElementById("foto-besar").src = foto.src;
+    setTimeout(() => {
+
+        hero.innerHTML = `
+
+        <h1 class="nama">
+            🤍 Our Memories 🤍
+        </h1>
+
+        <p class="ucapan">
+            Di hari spesialmu ini,
+aku ingin mengajakmu melihat kembali
+beberapa momen yang pernah kita lalui bersama.
+
+Semoga setiap foto ini bisa mengingatkanmu
+betapa berharganya setiap cerita yang kita buat. 🤍
+
+        </p>
+
+        <div class="galeri">
+
+            <img src="IMG-20250825-WA0023.jpg" onclick="bukaFoto(this)">
+            <img src="IMG-20250831-WA0039.jpg" onclick="bukaFoto(this)">
+            <img src="IMG-20250902-WA0013.jpg" onclick="bukaFoto(this)">
+            <img src="IMG-20250906-WA0271.jpg" onclick="bukaFoto(this)">
+            <img src="IMG-20251018-WA0020.jpg" onclick="bukaFoto(this)">
+            <img src="IMG-20251101-WA0000.jpg" onclick="bukaFoto(this)">
+            <img src="NARI STUDIO-00610.jpg" onclick="bukaFoto(this)">
+
+        </div>
+
+        <div id="lightbox" onclick="tutupFoto()">
+            <img id="foto-besar">
+        </div>
+
+        <button class="pesan-btn" onclick="penutup()">
+            Pesan Terakhir 🤍
+        </button>
+
+        `;
+
+        hero.classList.remove("keluar");
+        hero.classList.add("masuk");
+
+    },800);
 
 }
 
-function tutupFoto() {
+function penutup(){
 
-  document.getElementById("lightbox").style.display = "none";
+    const hero = document.querySelector(".hero");
+
+    hero.classList.add("keluar");
+
+    setTimeout(()=>{
+
+        hero.innerHTML = `
+
+        <h1 class="nama">
+            Terima Kasih 🤍
+        </h1>
+
+        <p class="pesan-akhir">
+
+            Terima kasih sudah membuka hadiah kecil ini.
+
+            <br><br>
+
+            Mungkin sederhana,
+            tapi semua yang ada di halaman ini
+            kubuat dengan penuh rasa sayang.
+
+            <br><br>
+
+            Semoga di umur yang baru,
+            kamu selalu sehat,
+            bahagia,
+            dimudahkan dalam segala urusan,
+            dan semua impianmu perlahan menjadi nyata.
+
+            <br><br>
+
+            Happy Birthday Sayang 🤍
+
+            <br><br>
+
+            I Love You.
+
+        </p>
+
+        <div class="love-ending">
+            🤍
+        </div>
+
+        <small>
+            Made with 🤍 by Ardian
+        </small>
+
+        <br><br>
+
+        <button class="pesan-btn" onclick="location.reload()">
+            🎁 Lihat Dari Awal
+        </button>
+
+        `;
+
+        hero.classList.remove("keluar");
+        hero.classList.add("masuk");
+
+    },800);
 
 }
-
-console.log("script.js berhasil dimuat");
