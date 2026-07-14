@@ -1,7 +1,7 @@
 function bukaHadiah() {
   document.querySelector(".hero").innerHTML = `
 
-  <div class="hati-container">
+    <div class="hati-container">
       <span class="hati">🤍</span>
       <span class="hati">🤍</span>
       <span class="hati">🤍</span>
@@ -9,20 +9,77 @@ function bukaHadiah() {
       <span class="hati">🤍</span>
     </div>
 
-    
+
     <img src="IMG-20251016-WA0006.jpg" class="foto">
 
+
     <h1 class="nama">
-      Untuk Liliana Nur Hanifah 🤍
+      Hello Liliana Nur Hanifah 🤍
     </h1>
 
+
     <p class="ucapan">
-      Selamat ulang tahun sayangku 🤍<br><br>
+      Selamat ulang tahun, Sayangg 🤍<br><br>
       Semoga kamu selalu diberikan kesehatan,
       kebahagiaan, dan semua hal baik yang kamu impikan.<br><br>
       Terima kasih sudah menjadi seseorang yang
       sangat berarti dalam hidupku 🤍
     </p>
 
+
+    <button class="pesan-btn" onclick="pesanTerakhir()">
+      Ada satu pesan lagi 🤍
+    </button>
+
   `;
+}
+
+function pesanTerakhir() {
+
+  document.querySelector(".hero").innerHTML = `
+
+    <h1 class="nama">
+      Untuk Kamu Yang Aku Sayang 🤍
+    </h1>
+
+    <p class="pesan-akhir">
+
+      Selamat ulang tahun, Liliana Nur Hanifah 🤍<br><br>
+
+      Hari ini adalah hari dimana seseorang yang
+      sangat berarti bagiku bertambah usia.<br><br>
+
+      Aku bersyukur bisa mengenal kamu,
+      bisa berbagi cerita, tertawa bersama,
+      dan memiliki banyak momen yang berarti.<br><br>
+
+      Terima kasih sudah hadir dalam hidupku,
+      terima kasih sudah menjadi seseorang yang
+      selalu membuat hari-hariku terasa lebih indah 🤍<br><br>
+
+      Di umur yang baru ini, aku berharap kamu
+      selalu diberikan kesehatan, kebahagiaan,
+      dimudahkan dalam segala urusan,
+      dan semua impian baikmu bisa tercapai.<br><br>
+
+      Tetap jadi Liliana yang aku kenal,
+      dengan senyum, kebaikan, dan caramu
+      yang selalu membuat aku merasa beruntung
+      bisa memilikimu.<br><br>
+
+      Semoga aku masih bisa menjadi orang yang
+      menemani perjalananmu, mendukungmu,
+      dan melihat kamu bahagia 🤍<br><br>
+
+      Sekali lagi, selamat ulang tahun sayangku.
+      Aku sayang kamu 🤍
+
+    </p>
+
+    <div class="hati-besar">
+      🤍
+    </div>
+
+  `;
+
 }
