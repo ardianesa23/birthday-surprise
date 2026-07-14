@@ -84,17 +84,23 @@ function pesanTerakhir() {
       </p>
 
       <div class="hati-besar">
-        🤍
-      </div>
-
-    `;
+  🤍
+</div>
 
 
-    // munculkan halaman baru
-    hero.classList.remove("keluar");
-    hero.classList.add("masuk");
+<h2 class="judul-galeri">
+  Kenangan kecil kita 🤍
+</h2>
 
 
-  }, 800);
+<div class="galeri">
 
-}
+  <img src="IMG-20250825-WA0023.jpg">
+  <img src="IMG-20250931-WA0039.jpg">
+  <img src="IMG-20250902-WA0013.jpg">
+  <img src="IMG-20250906-WA0271.jpg">
+  <img src="IMG-20251018-WA0020.jpg">
+  <img src="IMG-20251101-WA0000.jpg">
+  <img src="NARI STUDIO-00610.jpg">
+
+</div>
