@@ -2,9 +2,11 @@ const music = document.getElementById("bgMusic");
 
 function bukaHadiah() {
 
-    if (music.paused) {
+    const music = document.getElementById("bgMusic");
+
+    if (music && music.paused) {
         music.volume = 0.25;
-        music.play().catch(err => console.log(err));
+        music.play().catch(() => {});
     }
 
     document.querySelector(".hero").innerHTML = `
