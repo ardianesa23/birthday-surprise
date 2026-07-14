@@ -38,6 +38,8 @@ function pesanTerakhir() {
 
   document.querySelector(".hero").innerHTML = `
 
+ <img src="3.jpg" class="foto foto-akhir">
+
     <h1 class="nama">
       Selamat ulang tahun, Liliana Nur Hanifah 🤍
     </h1>
