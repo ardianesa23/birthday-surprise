@@ -109,3 +109,48 @@ button {
     opacity: 0;
   }
 }
+
+.nama {
+  margin-top: 25px;
+  opacity: 0;
+  animation: munculNama 1.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+
+.ucapan {
+  margin-top: 20px;
+  opacity: 0;
+  animation: munculUcapan 1.5s ease forwards;
+  animation-delay: 2.5s;
+}
+
+
+@keyframes munculNama {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes munculUcapan {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
