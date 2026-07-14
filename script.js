@@ -2,7 +2,7 @@ function bukaHadiah() {
   document.querySelector(".hero").innerHTML = `
     <h1>Untuk Liliana Nur Hanifah 🤍</h1>
 
-    <img src="3.jpg" class="foto">
+    <img src="IMG-20251016-WA0006.jpg" class="foto">
 
     <p>
     Selamat ulang tahun sayangku 🤍<br><br>
