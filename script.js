@@ -81,26 +81,56 @@ function pesanTerakhir() {
         Sekali lagi, selamat ulang tahun sayangku.<br>
         Aku sayang kamu 🤍
 
-      </p>
+            </p>
 
       <div class="hati-besar">
-  🤍
-</div>
+        🤍
+      </div>
+
+      <h2 class="judul-galeri">
+        Kenangan kecil kita 🤍
+      </h2>
+
+      <div class="galeri">
+
+        <img src="IMG-20250825-WA0023.jpg" onclick="bukaFoto(this)">
+        <img src="IMG-20250831-WA0039.jpg" onclick="bukaFoto(this)">
+        <img src="IMG-20250902-WA0013.jpg" onclick="bukaFoto(this)">
+        <img src="IMG-20250906-WA0271.jpg" onclick="bukaFoto(this)">
+        <img src="IMG-20251018-WA0020.jpg" onclick="bukaFoto(this)">
+        <img src="IMG-20251101-WA0000.jpg" onclick="bukaFoto(this)">
+        <img src="NARI STUDIO-00610.jpg" onclick="bukaFoto(this)">
+
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" onclick="tutupFoto()">
+        <img id="foto-besar">
+      </div>
+
+    `;
+
+    hero.classList.remove("keluar");
+    hero.classList.add("masuk");
+
+  }, 800);
+
+}
 
 
-<h2 class="judul-galeri">
-  Kenangan kecil kita 🤍
-</h2>
+// =======================
+// LIGHTBOX
+// =======================
 
+function bukaFoto(foto) {
 
-<div class="galeri">
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("foto-besar").src = foto.src;
 
-  <img src="IMG-20250825-WA0023.jpg">
-  <img src="IMG-20250831-WA0039.jpg">
-  <img src="IMG-20250902-WA0013.jpg">
-  <img src="IMG-20250906-WA0271.jpg">
-  <img src="IMG-20251018-WA0020.jpg">
-  <img src="IMG-20251101-WA0000.jpg">
-  <img src="NARI STUDIO-00610.jpg">
+}
 
-</div>
+function tutupFoto() {
+
+  document.getElementById("lightbox").style.display = "none";
+
+}
