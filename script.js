@@ -96,7 +96,7 @@ function pesanTerakhir() {
 <div class="galeri">
 
   <img src="IMG-20250825-WA0023.jpg">
-  <img src="IMG-20250931-WA0039.jpg">
+  <img src="IMG-20250831-WA0039.jpg">
   <img src="IMG-20250902-WA0013.jpg">
   <img src="IMG-20250906-WA0271.jpg">
   <img src="IMG-20251018-WA0020.jpg">
