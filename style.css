@@ -275,3 +275,7 @@ button {
   }
 
 }
+
+.foto-akhir {
+  animation: fotoMuncul 1.5s ease;
+}
