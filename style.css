@@ -51,9 +51,19 @@ body::before {
 }
 
 h1 {
-  color: #f5d27a;
+  color: #ffffff;
   font-size: 32px;
   margin-bottom: 15px;
+  text-shadow: 0 0 15px rgba(245, 210, 122, 0.8);
+}
+
+h2 {
+  color: #f5d27a;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 p {
