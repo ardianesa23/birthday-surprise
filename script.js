@@ -1,14 +1,13 @@
+const music = document.getElementById("bgMusic");
+
 function bukaHadiah() {
-  document.querySelector(".hero").innerHTML = `
 
-    <div class="hati-container">
-      <span class="hati">🤍</span>
-      <span class="hati">🤍</span>
-      <span class="hati">🤍</span>
-      <span class="hati">🤍</span>
-      <span class="hati">🤍</span>
-    </div>
+    if (music.paused) {
+        music.volume = 0.25;
+        music.play().catch(err => console.log(err));
+    }
 
+    document.querySelector(".hero").innerHTML = `
 
     <img src="IMG-20251016-WA0006.jpg" class="foto">
 
