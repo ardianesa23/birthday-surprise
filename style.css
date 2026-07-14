@@ -652,39 +652,3 @@ button {
     }
 
 }
-
-/* ========================= */
-/* PROGRESS HATI */
-/* ========================= */
-
-.progress{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:10px 0 25px;
-    user-select:none;
-}
-
-.heart-step{
-    font-size:22px;
-    color:#cfcfcf;
-    transition:.4s;
-}
-
-.heart-step.active{
-    color:#ffffff;
-    text-shadow:0 0 10px rgba(255,255,255,.8);
-}
-
-.heart-line{
-    width:45px;
-    height:2px;
-    background:#cfcfcf;
-    margin:0 8px;
-    border-radius:10px;
-}
-
-.heart-line.active{
-    background:#ffffff;
-    box-shadow:0 0 8px rgba(255,255,255,.6);
-}
