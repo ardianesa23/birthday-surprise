@@ -279,3 +279,52 @@ button {
 .foto-akhir {
   animation: fotoMuncul 1.5s ease;
 }
+
+.keluar {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 0.8s ease;
+}
+
+
+.masuk {
+  animation: masukHalaman 1s ease;
+}
+
+
+.foto-akhir {
+  animation: fotoMuncul 1.5s ease;
+}
+
+
+.pesan-akhir {
+  animation: munculPesan 2s ease;
+}
+
+
+@keyframes masukHalaman {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes munculPesan {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
