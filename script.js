@@ -1,3 +1,3 @@
 function bukaHadiah() {
-  alert("Selamat ulang tahun, Sayang 🤍🎂✨\n\nSemoga hari-harimu selalu dipenuhi kebahagiaan, kesehatan, dan hal-hal baik ❤️");
+  alert("Selamat ulang tahun, Sayangg 🤍\n\nSemoga panjang umur, sehat selalu, dan semua impian kamu bisa tercapai. Terima kasih sudah menjadi seseorang yang spesial dalam hidupku 🤍");
 }
