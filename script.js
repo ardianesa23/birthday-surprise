@@ -39,12 +39,10 @@ function pesanTerakhir() {
   document.querySelector(".hero").innerHTML = `
 
     <h1 class="nama">
-      Untuk Kamu Yang Aku Sayang 🤍
+      Selamat ulang tahun, Liliana Nur Hanifah 🤍
     </h1>
 
     <p class="pesan-akhir">
-
-      Selamat ulang tahun, Liliana Nur Hanifah 🤍<br><br>
 
       Hari ini adalah hari dimana seseorang yang
       sangat berarti bagiku bertambah usia.<br><br>
