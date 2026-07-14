@@ -87,3 +87,8 @@ button {
 button:hover {
   transform: scale(1.08);
 }
+button {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
