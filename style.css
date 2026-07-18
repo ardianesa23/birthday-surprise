@@ -658,12 +658,12 @@ button:hover,
 
     .foto,
     .foto-akhir{
+    .video-akhir{
 
-        width:210px;
+    width:210px;
+    height:270px;
 
-        height:270px;
-
-    }
+}
 
     .galeri{
 
@@ -985,16 +985,18 @@ small:last-child{
 
 .video-akhir{
 
-    width: 260px;
-    height: 320px;
+    width:260px;
+    height:320px;
 
-    object-fit: cover;
+    object-fit:cover;
 
-    display: block;
-    margin: 20px auto;
+    display:block;
+    margin:25px auto;
 
-    border-radius: 20px;
+    border-radius:20px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    animation:fotoMuncul 1.5s ease;
 
 }
