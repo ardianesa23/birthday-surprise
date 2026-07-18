@@ -123,12 +123,13 @@ betapa berharganya setiap cerita yang kita buat. 🤍
 
         <div class="galeri">
 
-            <img src="IMG-20250825-WA0023.jpg" onclick="bukaFoto(this)">
+            <img src="4.jpg" onclick="bukaFoto(this)">
             <img src="IMG-20250831-WA0039.jpg" onclick="bukaFoto(this)">
-            <img src="IMG-20250902-WA0013.jpg" onclick="bukaFoto(this)">
+            <img src="5.jpg" onclick="bukaFoto(this)">
             <img src="IMG-20250906-WA0271.jpg" onclick="bukaFoto(this)">
             <img src="IMG-20251018-WA0020.jpg" onclick="bukaFoto(this)">
-            <img src="IMG-20251101-WA0000.jpg" onclick="bukaFoto(this)">
+            <img src="6.jpg" onclick="bukaFoto(this)">
+            <img src="7.jpg" onclick="bukaFoto(this)">
             <img src="NARI STUDIO-00610.jpg" onclick="bukaFoto(this)">
 
         </div>
