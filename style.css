@@ -658,12 +658,17 @@ button:hover,
 
     .foto,
     .foto-akhir{
+    @media(max-width:600px){
+
     .video-akhir{
 
-    width:210px;
-    height:270px;
+        width:210px !important;
+        height:270px !important;
 
-}
+        max-width:210px !important;
+        min-width:210px !important;
+
+    }
 
     .galeri{
 
@@ -985,18 +990,20 @@ small:last-child{
 
 .video-akhir{
 
-    width:260px;
-    height:320px;
+    display: block;
 
-    object-fit:cover;
+    width: 260px !important;
+    height: 320px !important;
 
-    display:block;
-    margin:25px auto;
+    max-width: 260px !important;
+    min-width: 260px !important;
 
-    border-radius:20px;
+    object-fit: cover;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    margin: 20px auto;
 
-    animation:fotoMuncul 1.5s ease;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 
 }
