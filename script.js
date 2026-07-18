@@ -38,7 +38,10 @@ window.scrollTo({
 function pesanTerakhir() {
 
   const hero = document.querySelector(".hero");
-
+window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
   // efek pindah halaman
   hero.classList.add("keluar");
 
