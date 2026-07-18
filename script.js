@@ -9,7 +9,7 @@ function bukaHadiah() {
 
     document.querySelector(".hero").innerHTML = `
 
-        <img src="IMG-20251016-WA0006.jpg" class="foto">
+        <img src="1.jpg" class="foto">
 
         <h1 class="nama">
             Hello Liliana Nur Hanifah 🤍
