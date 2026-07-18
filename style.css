@@ -135,13 +135,19 @@ background:#ce7f8b;
 
 .foto{
 
-border:8px solid white;
+    width:220px;
+    height:280px;
 
-border-radius:18px;
+    object-fit:cover;
 
-box-shadow:
+    display:block;
+    margin:25px auto;
 
-0 18px 45px rgba(0,0,0,.18);
+    border:8px solid white;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 
 }
 
