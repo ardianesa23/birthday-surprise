@@ -1007,3 +1007,21 @@ small:last-child{
     box-shadow: 0 10px 30px rgba(0,0,0,.15);
 
 }
+.video-wrapper{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.video-akhir{
+
+    width:260px;
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
