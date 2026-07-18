@@ -294,3 +294,15 @@ function akhirBanget(){
     },800);
 
 }
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        const opening = document.getElementById("opening");
+
+        opening.style.display = "none";
+
+    },3000);
+
+});
