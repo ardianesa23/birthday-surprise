@@ -243,10 +243,12 @@ function akhirBanget(){
 
         hero.innerHTML = `
 
-       <div class="video-wrapper">
+    <div class="video-wrapper">
 
     <video class="video-akhir" autoplay muted loop playsinline controls>
+
         <source src="video.mp4" type="video/mp4">
+
     </video>
 
 </div>
