@@ -6,7 +6,11 @@ function bukaHadiah() {
         music.volume = 0.25;
         music.play().catch(() => {});
     }
-
+window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
+    
     document.querySelector(".hero").innerHTML = `
 
         <img src="1.jpg" class="foto">
