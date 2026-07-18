@@ -135,23 +135,21 @@ background:#ce7f8b;
 
 .foto{
 
-    width: 260px;      /* ubah sesuai selera, bisa 240-280px */
-    max-width: 100%;
+    width:260px;
+    height:320px;
 
-    height: auto;
+    display:block;
+    margin:20px auto;
 
-    display: block;
-    margin: 25px auto 35px;
+    object-fit:cover;
 
-    object-fit: cover;
+    border-radius:20px;
 
-    border: 8px solid white;
-    border-radius: 18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 
-    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+    animation:fotoMuncul 1.5s ease;
 
 }
-
 h1,.nama{
 
 font-family:"Playfair Display",serif;
