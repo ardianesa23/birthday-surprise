@@ -135,19 +135,20 @@ background:#ce7f8b;
 
 .foto{
 
-    width:220px;
-    height:280px;
+    width: 260px;      /* ubah sesuai selera, bisa 240-280px */
+    max-width: 100%;
 
-    object-fit:cover;
+    height: auto;
 
-    display:block;
-    margin:25px auto;
+    display: block;
+    margin: 25px auto 35px;
 
-    border:8px solid white;
+    object-fit: cover;
 
-    border-radius:18px;
+    border: 8px solid white;
+    border-radius: 18px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
 
 }
 
