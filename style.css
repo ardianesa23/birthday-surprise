@@ -1,3 +1,7 @@
+/* ========================= */
+/* FONT & BODY */
+/* ========================= */
+
 body{
     margin:0;
     padding:40px 20px;
@@ -11,14 +15,14 @@ body{
     align-items:center;
 
     background:
-    radial-gradient(circle at top,#ffffff 0%,#fff8fb 45%,#fdeef4 100%);
+        radial-gradient(circle at top,#ffffff 0%,#fff8fb 45%,#fdeef4 100%);
 
     overflow-x:hidden;
 
     position:relative;
 }
 
-/* ← Tempel nomor 2 DI SINI */
+/* Cahaya lembut */
 
 body::before{
 
@@ -38,13 +42,11 @@ body::before{
     top:-180px;
     left:-120px;
 
-    opacity:.5;
+    opacity:.55;
 
     z-index:-2;
 
 }
-
-/* ← Lalu nomor 3 tepat di bawahnya */
 
 body::after{
 
@@ -57,203 +59,852 @@ body::after{
 
     border-radius:50%;
 
-    background:white;
+    background:#ffffff;
 
     filter:blur(120px);
 
-    bottom:-120px;
     right:-80px;
+    bottom:-120px;
 
-    opacity:.7;
+    opacity:.75;
 
     z-index:-2;
 
 }
 
+/* ========================= */
+/* KARTU UTAMA */
+/* ========================= */
+
 .hero{
 
     width:100%;
-    max-width:650px;
-
-    background:rgba(255,255,255,.82);
-
-    backdrop-filter:blur(10px);
-
-    border-radius:28px;
+    max-width:560px;
 
     padding:45px;
 
     text-align:center;
 
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.5);
+
     box-shadow:
-
         0 20px 60px rgba(0,0,0,.08),
-
-        0 2px 10px rgba(255,255,255,.7) inset;
-
-}
-
-.hero{
-
-background-image:
-
-radial-gradient(rgba(255,255,255,.7) 1px,transparent 1px);
-
-background-size:18px 18px;
+        inset 0 2px 8px rgba(255,255,255,.8);
 
 }
 
-button{
+/* ========================= */
+/* JUDUL */
+/* ========================= */
 
-background:#d98b97;
+h1,
+.nama{
 
-color:white;
+    font-family:"Playfair Display",serif;
 
-padding:14px 30px;
+    font-size:38px;
 
-border:none;
+    font-weight:500;
 
-border-radius:999px;
+    color:#4b4b4b;
 
-font-weight:600;
+    letter-spacing:.5px;
 
-box-shadow:
+    margin-top:20px;
 
-0 10px 25px rgba(217,139,151,.35);
+}
 
-transition:.3s;
+h2{
+
+    color:#777;
+
+    font-weight:500;
 
 }
 
-button:hover{
+p{
 
-transform:translateY(-3px);
+    color:#666;
 
-background:#ce7f8b;
+    line-height:1.8;
 
 }
+
+/* ========================= */
+/* FOTO */
+/* ========================= */
 
 .foto{
 
     width:260px;
     height:320px;
 
-    display:block;
-    margin:20px auto;
-
     object-fit:cover;
+
+    display:block;
+
+    margin:25px auto;
 
     border-radius:20px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 
-    animation:fotoMuncul 1.5s ease;
-
-}
-h1,.nama{
-
-font-family:"Playfair Display",serif;
-
-font-weight:500;
+    animation:fotoMuncul 1.2s ease;
 
 }
 
-.galeri{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 30px 0;
-}
+.foto-akhir{
 
-.galeri img{
+    width:260px;
+    height:320px;
 
-    width: 120px;
-    height: 120px;
+    object-fit:cover;
 
-    object-fit: cover;
+    display:block;
 
-    border-radius: 12px;
+    margin:25px auto;
 
-    background: white;
-    padding: 5px;
+    background:white;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    padding:10px;
 
-    cursor: pointer;
+    border-radius:8px;
 
-    transition: .3s ease;
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
 
 }
 
-.galeri img:hover{
+/* ========================= */
+/* TOMBOL */
+/* ========================= */
 
-    transform: scale(1.05);
+button,
+.pesan-btn{
+
+    background:#d98b97;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:
+        0 12px 28px rgba(217,139,151,.35);
 
 }
 
-/* HP */
-@media(max-width:600px){
+button:hover,
+.pesan-btn:hover{
 
-    .galeri img{
+    transform:translateY(-3px);
 
-        width: 90px;
-        height: 90px;
+    background:#cb7b88;
+
+}
+
+/* ========================= */
+/* ANIMASI */
+/* ========================= */
+
+@keyframes fotoMuncul{
+
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+@keyframes muncul{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes munculAtas{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes munculBawah{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ========================= */
+/* UCAPAN */
+/* ========================= */
+
+.ucapan{
+
+    margin-top:20px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    opacity:0;
+
+    animation:munculBawah 1.2s ease forwards;
+
+    animation-delay:1.1s;
+
+}
+
+.pesan-akhir{
+
+    margin-top:25px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    animation:muncul 1.5s ease;
+
+}
+
+/* ========================= */
+/* HATI */
+/* ========================= */
+
+.hati-container{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.hati{
+
+    position:absolute;
+
+    bottom:-60px;
+
+    font-size:24px;
+
+    animation:naikHati 7s linear infinite;
+
+    opacity:0;
+
+}
+
+.hati:nth-child(1){
+
+    left:12%;
+
+    animation-delay:0s;
+
+}
+
+.hati:nth-child(2){
+
+    left:28%;
+
+    animation-delay:1.5s;
+
+}
+
+.hati:nth-child(3){
+
+    left:50%;
+
+    animation-delay:3s;
+
+}
+
+.hati:nth-child(4){
+
+    left:72%;
+
+    animation-delay:2s;
+
+}
+
+.hati:nth-child(5){
+
+    left:90%;
+
+    animation-delay:4s;
+
+}
+
+@keyframes naikHati{
+
+    0%{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-850px) scale(1.3);
+
+        opacity:0;
 
     }
 
 }
 
-    #lightbox{
+/* ========================= */
+/* HATI BESAR */
+/* ========================= */
+
+.hati-besar,
+.love-ending{
+
+    font-size:60px;
+
+    margin-top:30px;
+
+    animation:denyut 1.6s infinite;
+
+}
+
+@keyframes denyut{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ========================= */
+/* TRANSISI HALAMAN */
+/* ========================= */
+
+.keluar{
+
+    opacity:0;
+
+    transform:translateY(-30px);
+
+    transition:.8s ease;
+
+}
+
+.masuk{
+
+    animation:masukHalaman .8s ease;
+
+}
+
+@keyframes masukHalaman{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ========================= */
+/* GALERI */
+/* ========================= */
+
+.judul-galeri{
+
+    margin-top:45px;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#4b4b4b;
+
+}
+
+.galeri{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+
+    gap:18px;
+
+    justify-items:center;
+
+}
+
+/* Foto Galeri */
+
+.galeri img{
+
+    width:110px;
+
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    padding:6px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    opacity:0;
+
+    animation:munculFoto .8s forwards;
+
+}
+
+/* muncul satu-satu */
+
+.galeri img:nth-child(1){animation-delay:.2s;}
+.galeri img:nth-child(2){animation-delay:.4s;}
+.galeri img:nth-child(3){animation-delay:.6s;}
+.galeri img:nth-child(4){animation-delay:.8s;}
+.galeri img:nth-child(5){animation-delay:1s;}
+.galeri img:nth-child(6){animation-delay:1.2s;}
+.galeri img:nth-child(7){animation-delay:1.4s;}
+
+.galeri img:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+@keyframes munculFoto{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ========================= */
+/* LIGHTBOX */
+/* ========================= */
+
+#lightbox{
 
     display:none;
 
     position:fixed;
 
-    top:0;
-    left:0;
+    inset:0;
 
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.85);
+    background:rgba(0,0,0,.88);
 
     justify-content:center;
+
     align-items:center;
 
     z-index:9999;
+
+    cursor:pointer;
+
+    padding:20px;
 
 }
 
 #foto-besar{
 
-    max-width:80%;
-    max-height:80%;
+    max-width:85%;
 
-    border-radius:15px;
+    max-height:85%;
+
+    border-radius:18px;
 
     background:white;
-    padding:8px;
 
-    animation:zoomFoto .3s ease;
+    padding:10px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    animation:zoomFoto .35s ease;
 
 }
 
 @keyframes zoomFoto{
 
     from{
-        transform:scale(.8);
+
         opacity:0;
+
+        transform:scale(.8);
+
     }
 
     to{
-        transform:scale(1);
+
         opacity:1;
+
+        transform:scale(1);
+
     }
 
 }
-letter-spacing:.5px;
 
-color:#4b4b4b;
+/* ========================= */
+/* RESPONSIVE HP */
+/* ========================= */
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding:28px 22px;
+
+    }
+
+    h1,.nama{
+
+        font-size:30px;
+
+    }
+
+    .foto,
+    .foto-akhir{
+
+        width:210px;
+
+        height:270px;
+
+    }
+
+    .galeri{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:14px;
+
+    }
+
+    .galeri img{
+
+        width:95px;
+
+        height:95px;
+
+    }
+
+    #foto-besar{
+
+        max-width:92%;
+
+        max-height:80%;
+
+    }
+
+}
+
+/* ========================= */
+/* PESAN RAHASIA */
+/* ========================= */
+
+.pesan-rahasia{
+
+    margin-top:35px;
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+    opacity:0;
+
+    animation:fadePesan 1.5s forwards;
+
+}
+
+.btn-rahasia{
+
+    opacity:0;
+
+    animation:fadePesan 1.5s forwards;
+
+    animation-delay:1s;
+
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes fadePesan{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+small{
+
+    display:block;
+
+    margin-top:30px;
+
+    color:#999;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+
+/* ========================= */
+/* HERO MENGAMBANG */
+/* ========================= */
+
+.hero{
+
+    animation:heroFloat 8s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ========================= */
+/* SCROLL */
+/* ========================= */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#fff5f8;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d98b97;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#c97885;
+
+}
+
+
+/* ========================= */
+/* TOMBOL */
+/* ========================= */
+
+button,
+.pesan-btn{
+
+    transition:.35s;
+
+}
+
+button:hover,
+.pesan-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(217,139,151,.35);
+
+}
+
+button:active,
+.pesan-btn:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* ========================= */
+/* FOTO */
+/* ========================= */
+
+.foto,
+.foto-akhir{
+
+    transition:.5s;
+
+}
+
+.foto:hover,
+.foto-akhir:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
+}
+
+
+/* ========================= */
+/* LOVE */
+/* ========================= */
+
+.love-ending{
+
+    margin-top:25px;
+
+    animation:denyut 1.6s infinite;
+
+}
+
+
+/* ========================= */
+/* COPYRIGHT */
+/* ========================= */
+
+small:last-child{
+
+    margin-top:40px;
+
+    opacity:.8;
 
 }
