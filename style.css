@@ -917,11 +917,7 @@ small:last-child{
 
     position:fixed;
 
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
+    inset:0;
 
     background:#111;
 
@@ -930,13 +926,14 @@ small:last-child{
     display:flex;
 
     justify-content:center;
+
     align-items:center;
 
     flex-direction:column;
 
     z-index:99999;
 
-    animation:openingFade 3s forwards;
+    transition:opacity .8s ease;
 
 }
 
@@ -981,24 +978,6 @@ small:last-child{
 
         opacity:1;
         transform:translateY(0);
-
-    }
-
-}
-
-@keyframes openingFade{
-
-    0%,70%{
-
-        opacity:1;
-
-    }
-
-    100%{
-
-        opacity:0;
-
-        visibility:hidden;
 
     }
 
