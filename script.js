@@ -243,7 +243,11 @@ function akhirBanget(){
 
         hero.innerHTML = `
 
-        <img src="3.jpg" class="foto foto-akhir">
+        <video class="video-akhir" autoplay muted loop playsinline controls>
+
+    <source src="video.mp4" type="video/mp4">
+
+</video>
 
         <h1 class="nama">
             Hello Sayang 🤍
