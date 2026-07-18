@@ -908,3 +908,98 @@ small:last-child{
     opacity:.8;
 
 }
+
+/* ========================= */
+/* OPENING */
+/* ========================= */
+
+#opening{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:#111;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:99999;
+
+    animation:openingFade 3s forwards;
+
+}
+
+#opening h1{
+
+    color:white;
+
+    font-size:42px;
+
+    font-family:"Playfair Display",serif;
+
+    margin-bottom:15px;
+
+    opacity:0;
+
+    animation:munculOpening 1.5s forwards;
+
+}
+
+#opening p{
+
+    color:#ddd;
+
+    letter-spacing:2px;
+
+    opacity:0;
+
+    animation:munculOpening 1.5s .8s forwards;
+
+}
+
+@keyframes munculOpening{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes openingFade{
+
+    0%,70%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        visibility:hidden;
+
+    }
+
+}
