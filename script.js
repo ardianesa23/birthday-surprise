@@ -297,12 +297,23 @@ function akhirBanget(){
 
 window.addEventListener("load", () => {
 
+    const opening = document.getElementById("opening");
+    const hero = document.querySelector(".hero");
+
+    hero.style.display = "none";
+
     setTimeout(() => {
 
-        const opening = document.getElementById("opening");
+        opening.style.opacity = "0";
 
-        opening.style.display = "none";
+        setTimeout(() => {
 
-    },3000);
+            opening.style.display = "none";
+
+            hero.style.display = "block";
+
+        },800);
+
+    },2500);
 
 });
